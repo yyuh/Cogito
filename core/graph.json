@@ -1,0 +1,42 @@
+﻿{
+  "version": "1.0",
+  "createdAt": "2026-06-13T22:25:00+08:00",
+  "lastUpdated": "2026-06-13T22:25:00+08:00",
+  "relationTypes": {
+    "supports": "A支撑/验证B",
+    "extends": "B从A延伸/深化",
+    "contradicts": "A与B存在张力/矛盾",
+    "example_of": "B是A的具象案例",
+    "triggers": "想到A自然触发B"
+  },
+  "edges": [
+    {"source":"m001","target":"m002","relation":"supports","desc":"保险公司模式是无风险基底+杠杆套利的理念层"},
+    {"source":"m002","target":"m001","relation":"extends","desc":"杠杆套利是保险公司模式的具体操作方案"},
+    {"source":"m003","target":"m002","relation":"supports","desc":"复利思维验证了长期杠杆套利的可行性"},
+    {"source":"m004","target":"m002","relation":"extends","desc":"杠杆套利只在特定财富量级有效，呼应分层策略"},
+    {"source":"m005","target":"m001","relation":"supports","desc":"认知不够就驾驭不了期权卖方策略"},
+    {"source":"m005","target":"m002","relation":"supports","desc":"没有认知基础，杠杆套利就是灾难"},
+    {"source":"m005","target":"m015","relation":"supports","desc":"认知建设=读书四阶论的正确路径"},
+    {"source":"m006","target":"m007","relation":"triggers","desc":"单一路径上的困难，恰好就是包装过的礼物"},
+    {"source":"m007","target":"m006","relation":"supports","desc":"困难是礼物→所以不存在绕路，只有必经"},
+    {"source":"m008","target":"m006","relation":"triggers","desc":"人生RPG→新手村到通关只有一条路"},
+    {"source":"m006","target":"m008","relation":"example_of","desc":"单一路径是人生RPG的游戏规则"},
+    {"source":"m009","target":"m007","relation":"extends","desc":"记录是把'困难礼物'拆开的方式"},
+    {"source":"m009","target":"m005","relation":"supports","desc":"记录递进直接构建认知"},
+    {"source":"m010","target":"m011","relation":"triggers","desc":"内心字典不同→沟通冲突→沉默是力量"},
+    {"source":"m012","target":"m018","relation":"supports","desc":"AI渗透一切→人性反而更稀缺更值钱"},
+    {"source":"m018","target":"m012","relation":"triggers","desc":"AI是蒸汽机→越是机器时代，人味越贵"},
+    {"source":"m019","target":"m018","relation":"extends","desc":"AI渗透后，垂直深耕是普通人切入AI的方式"},
+    {"source":"m020","target":"m012","relation":"extends","desc":"数据主权是人性溢价的具象化"},
+    {"source":"m021","target":"m012","relation":"supports","desc":"反算法才能保住人性的稀缺性"},
+    {"source":"m013","target":"m008","relation":"extends","desc":"传记帮你选人生RPG的职业角色"},
+    {"source":"m015","target":"m013","relation":"supports","desc":"读书四阶论第一阶就是传记"},
+    {"source":"m016","target":"m007","relation":"triggers","desc":"困境促扎根=困难是礼物的另一种说法"},
+    {"source":"m017","target":"m008","relation":"example_of","desc":"高考只是人生RPG的一个关卡"},
+    {"source":"m022","target":"m004","relation":"contradicts","desc":"财富分层说策略跟量级走，上层建筑论说权力结构决定一切，包括财富分层本身"},
+    {"source":"m023","target":"m013","relation":"triggers","desc":"剥离社会标签→用故事定义自己→传记寻梦"},
+    {"source":"m024","target":"m019","relation":"extends","desc":"精细化壁垒是垂直深耕的执行层"},
+    {"source":"m024","target":"m009","relation":"triggers","desc":"做到极致需要记录-反馈-改进的循环"},
+    {"source":"m016","target":"m006","relation":"supports","desc":"根扎深了，单一路径才能走到底"}
+  ]
+}
